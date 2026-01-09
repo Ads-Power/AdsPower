@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "configUpdate": {
     "enabled": true,
     "sourceUrl": "https://raw.githubusercontent.com/AdsPower/AdsPowerDesktop/main/config.json",
@@ -36,7 +36,7 @@
     "remoteUrl": "",
     "refreshMinutes": 15,
     "local": {
-      "version": 2,
+      "version": 1,
       "hideSelectors": [],
       "removeSelectors": [],
       "css": "",
