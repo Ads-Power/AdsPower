@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 1,
   "configUpdate": {
     "enabled": true,
     "sourceUrl": "https://raw.githubusercontent.com/Ads-Power/AdsPower/main/config.json",
